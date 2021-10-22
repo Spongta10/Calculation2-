@@ -1,0 +1,17 @@
+clc();
+d=input("Enter diameter of conductor");
+r=d/2;
+rad=0.7788*r;
+fprintf("\nFOR SYMMETRICAL:-");
+dab=input("\nEnter distance of symmetrical");
+fprintf("\nFOR UNSEMMETRICAL:-");
+dabu=input("\nEnter distance between a and b in cm");
+dbcu=input("\nEnter distance between b and c in cm");
+dcau=input("\nEnter distance between c and a in cm");
+gmd=(dabu*dbcu*dcau)^1/3;
+L=(2*10^(-7))*log(dab/rad);
+C=(2*pi*8*10^(-12))/log(d/r);
+Lu=(2*10^(-7))*log(gmd/rad);
+Cu=(2*pi*8*10^(-12))/log(gmd/r);
+fprintf("\nInductance of symmetrical line = %d and for unsymmetrical line= %d",L,Lu);
+fprintf("\nCapacitance of symmetrical line = %d_and for unsymmetrical line =%",C,Cu);
