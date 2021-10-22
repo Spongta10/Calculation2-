@@ -14,4 +14,4 @@ C=(2*pi*8*10^(-12))/log(d/r);
 Lu=(2*10^(-7))*log(gmd/rad);
 Cu=(2*pi*8*10^(-12))/log(gmd/r);
 fprintf("\nInductance of symmetrical line = %d and for unsymmetrical line= %d",L,Lu);
-fprintf("\nCapacitance of symmetrical line = %d_and for unsymmetrical line =%",C,Cu);
+fprintf("\nCapacitance of symmetrical line = %d_and for unsymmetrical line =%d",C,Cu);
